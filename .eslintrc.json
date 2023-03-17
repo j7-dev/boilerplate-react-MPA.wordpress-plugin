@@ -49,7 +49,7 @@
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "lf",
+        "endOfLine": "auto",
         "useTabs": false,
         "tabWidth": 2,
         "prettier-multiline-arrays-set-threshold": 1
