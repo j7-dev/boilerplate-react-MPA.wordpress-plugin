@@ -2,33 +2,33 @@ import { axios } from '@/api'
 import { apiUrl } from '@/utils'
 
 export const getResource = async ({
-  resource,
-  id,
-  args = {},
+    resource,
+    id,
+    args = {},
 }: {
-  resource: string
-  id: number
-  args?: Record<string, any>
+    resource: string
+    id: number
+    args?: Record<string, any>
 }) => {
-  const getResult = await axios.get(
-    `${apiUrl}/wp/v2/${resource}/${id}/?${new URLSearchParams(
-      args,
-    ).toString()}`,
-  )
+    const getResult = await axios.get(
+        `${apiUrl}/wp/v2/${resource}/${id}/?${new URLSearchParams(
+            args,
+        ).toString()}`,
+    )
 
-  return getResult
+    return getResult
 }
 
 export const getResources = async ({
-  resource,
-  args = {},
+    resource,
+    args = {},
 }: {
-  resource: string
-  args?: Record<string, any>
+    resource: string
+    args?: Record<string, any>
 }) => {
-  const getResult = await axios.get(
-    `${apiUrl}/wp/v2/${resource}/?${new URLSearchParams(args).toString()}`,
-  )
+    const getResult = await axios.get(
+        `${apiUrl}/wp/v2/${resource}/?${new URLSearchParams(args).toString()}`,
+    )
 
-  return getResult
+    return getResult
 }

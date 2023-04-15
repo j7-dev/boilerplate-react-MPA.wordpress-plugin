@@ -5,11 +5,11 @@ import { defaultRouters } from '@/Router'
 import { antdTheme } from './utils'
 
 function App() {
-  return (
-    <ConfigProvider theme={antdTheme}>
-      <RouterProvider router={defaultRouters} />
-    </ConfigProvider>
-  )
+    return (
+        <ConfigProvider theme={antdTheme}>
+            <RouterProvider router={defaultRouters} />
+        </ConfigProvider>
+    )
 }
 
 export default App

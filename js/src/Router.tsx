@@ -6,37 +6,37 @@ import GetUsersPage from '@/pages/getUsers'
 import { baseUrl } from '@/utils'
 
 export const defaultRouters = createBrowserRouter([
-  {
-    path: baseUrl,
-    element: <CustomLayouts />,
-    children: [
-      {
-        path: '',
-        element: <DefaultPage />,
-      },
-      {
-        path: 'get-posts',
-        element: <GetPostsPage />,
-      },
-      {
-        path: 'get-users',
-        element: <GetUsersPage />,
-      },
-    ],
-  },
+    {
+        path: baseUrl,
+        element: <CustomLayouts />,
+        children: [
+            {
+                path: '',
+                element: <DefaultPage />,
+            },
+            {
+                path: 'get-posts',
+                element: <GetPostsPage />,
+            },
+            {
+                path: 'get-users',
+                element: <GetUsersPage />,
+            },
+        ],
+    },
 ])
 
 export const defaultRouterMetas = [
-  {
-    path: baseUrl,
-    title: 'Home',
-  },
-  {
-    path: `${baseUrl}get-posts`,
-    title: 'All Posts',
-  },
-  {
-    path: `${baseUrl}get-users`,
-    title: 'All Users',
-  },
+    {
+        path: baseUrl,
+        title: 'Home',
+    },
+    {
+        path: `${baseUrl}get-posts`,
+        title: 'All Posts',
+    },
+    {
+        path: `${baseUrl}get-users`,
+        title: 'All Users',
+    },
 ]
