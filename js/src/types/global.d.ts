@@ -1,12 +1,12 @@
 declare global {
-  var wpApiSettings: {
-    root: string
-    nonce: string
-  }
-  var userData: {
-    userName: string
-    userId: string
-  }
+    var wpApiSettings: {
+        root: string
+        nonce: string
+        apiUrl: string
+    }
+    var userData: {
+        userId: string
+    }
 }
 
 export {}
